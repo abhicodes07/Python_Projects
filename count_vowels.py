@@ -8,7 +8,8 @@ for i in range(0, len(str1)):
         if str1[i] == vowels[j]:
             count += 1
 
-print(count)
+print("Initialised string: ", str1)
+print("Number of vowels in initialised string:", count)
 
 
 
