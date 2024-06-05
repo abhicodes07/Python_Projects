@@ -8,7 +8,7 @@ rows = int(input("Enter the number: "))
 
 for i in range(rows):
     print()
-    sleep(1)
+    sleep(0.5)
     for j in range(i+1):
         print('*', end=' ')
         
