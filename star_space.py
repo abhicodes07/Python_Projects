@@ -1,11 +1,12 @@
 
 
 rows = int(input("Enter the number : "))
-spc = rows
-for i in range(rows, 0, -1):
+
+for i in range(rows):
     print()
-    for k in range(i):
-        print('3', end='')
-
+    for j in range(rows-i-1):
+        print(' ', end='')
+        
+    for k in range(2*i+1):
+        print('*', end='')
 print()
-
