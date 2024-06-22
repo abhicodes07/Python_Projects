@@ -6,26 +6,30 @@
 # First of all i am creating a function for asking username and password
 
 def log(username, password):
-    user = input("\t\t-> Enter The username: ").lower
-    passw = input("\t\t-> Enter the password: ") .lower
+    print("-- 🍀 PLEASE CONFIRM USERNAME AND PASSWORD TO CONTINUE! --🍀")
+    user = input("\t\t-> Enter The username: ")
+    # print(f"Confirming username: {user}")
+    passw = input("\t\t-> Enter the password: ")
+    # print(f"Confirming password: {passw}")
+
+    if user == username and passw == password:
+        print(f"\n\t---\t\t🍀 Welcome!, {username} 🍀")
+        print(f"\n\t---\t🍀 Please {username}! Choose an option from below ->  🍀")
 
     while user != username and passw != password:
-        if user != username:
-            print("Wrong Username, Please Enter The Correct Username!")
-        elif passw != password:
-            print("Wrong password, Please enter correct password!")
-        else: 
-            print("WRONG USERNAME AND PASSWORD, PLEASE TRY AGAIN!! ")
-            # log(user_name, user_pass)
-        return log(username, password)
-
+        print("WRONG USERNAME AND PASSWORD, PLEASE TRY AGAIN!! ")
         print()
+        return log(username, password)
+         
 
 print("\t\t---\t 🌟 WELCOME TO THE EPHIMORE FOOD ORDERING APP 🌟 \t --")
 
-username = input("\t\t-> Please Set the username: ").lower
-password = input("\t\t-> Please Set the password: ").lower
-
+username = input("\t\t-> Please Set the username: ")
+# print(f"Username: {username}")
+password = input("\t\t-> Please Set the password: ")
+# print(f"Password: {password}")
+print()
+print()
 log(username, password)
 
         # if user_cnfrm == user_name and pass_cnfrm == user_pass:
