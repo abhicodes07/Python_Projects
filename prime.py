@@ -15,3 +15,4 @@ else:
     print("Entered number is not a prime number.")
 
 
+
