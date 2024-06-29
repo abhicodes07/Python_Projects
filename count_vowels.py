@@ -1,5 +1,5 @@
 # Demonstrating program of finding vowels in string
-import string
+# import string
 str1 = input("Enter the string: ")
 vowels = ['a', 'e', 'i', 'o', 'u']
 count = 0
